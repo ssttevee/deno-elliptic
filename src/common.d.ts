@@ -29,4 +29,9 @@ export interface Point extends PointLike {
     inspect(): string;
 }
 
-export type PointInit = BinaryInput | PointLike;
+export interface PointInput {
+    x: BigNumberInit;
+    y: BigNumberInit;
+}
+
+export type PointInit = BinaryInput | PointInput;
